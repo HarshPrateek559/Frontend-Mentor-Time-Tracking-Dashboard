@@ -176,7 +176,7 @@ color: hsl(235, 45%, 61%);
   color:hsl(235, 45%, 61%);
 }
 
-@media only screen and (max-width: 450px) {
+@media (max-width: 450px) {
   .main {
     height: 150vh;
   }
