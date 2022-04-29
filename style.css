@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Rubik;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #0d1323;
+}
+
+main {
+  height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.grid {
+  width: 70vw;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.info {
+  background: #1d204b;
+  height: 90%;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  bottom: -43px;
+}
+
+
+#user .user-info {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  background: hsl(235, 45%, 61%);
+  background-image: url("images/image-jeremy.png");
+  background-repeat: no-repeat;
+  background-position: left 30px top 20px;
+  background-size: 70px 70px;
+  border-radius: 20px;
+}
+
+#user .info{
+padding: 25px 20px 0 20px;
+height: 50%;
+z-index: 0;
+position: relative;
+bottom: 10px;
+}
+
+#user .info ul li{
+list-style: none;
+margin: 10px;
+cursor: pointer;
+color: hsl(235, 45%, 61%);
+}
+
+#user .info ul li:hover{
+  color: white;
+}
+
+#user .user-info .text sub {
+  font-weight: 300;
+  color: hsl(236, 100%, 87%);
+}
+#user .user-info .text h1 {
+  font-weight: 100;
+  font-size: 30px;
+}
+#user .user-info .text{
+  width: 100px;
+  position: relative;
+  top: 110px;
+  left: 49px;
+}
+
+#user {
+  grid-row: 1 / span 2;
+  background: #1d204b;
+}
+
+#work {
+  background: hsl(15, 100%, 70%);
+  background-image: url("images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: right 5px top -10px;
+}
+#study {
+  background: hsl(348, 100%, 68%);
+  background-image: url("images/icon-study.svg");
+  background-repeat: no-repeat;
+  background-position: right 5px top -10px;
+}
+#play {
+  background: hsl(195, 74%, 62%);
+  background-image: url("images/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: right 5px top -10px;
+}
+#exercise {
+  background: hsl(145, 58%, 55%);
+  background-image: url("images/icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position: right 5px top -10px;
+}
+#social {
+  background: hsl(264, 64%, 52%);
+  background-image: url("images/icon-social.svg");
+  background-repeat: no-repeat;
+  background-position: right 5px top -10px;
+}
+#self-care {
+  background: hsl(43, 84%, 65%);
+  background-image: url("images/icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position: right 5px top -10px;
+}
+
+.name{
+  height: 50px;
+  padding: 0 20px 0 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time{
+  height: 70px;
+  width: 100%;
+  padding: 0 10px 0 20px;
+}
+
+.total{
+  font-weight: 300;
+  font-size: 55px;
+}
+.last{
+  font-weight: 300;
+  font-size: 15px;
+  color:hsl(235, 45%, 61%);
+}
+
+@media only screen and (max-width: 400px) {
+  .main {
+    height: 150vh;
+  }
+  .grid {
+    height: 90%;
+    width: 85vw;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .card {
+    height: 90%;
+    border-radius: 20px;
+  }
+
+  .user {
+    height: 100%;
+  }
+
+  .info {
+    width: 101%;
+    position: relative;
+    bottom: -47px;
+    height: 85%;
+    left: -2px;
+    border-radius: 20px;
+  }
+  #user {
+    grid-row: 1/2;
+  }
+}
