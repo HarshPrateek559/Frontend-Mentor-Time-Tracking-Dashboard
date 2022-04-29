@@ -49,6 +49,11 @@ section {
   border-radius: 10px;
   position: relative;
   bottom: -43px;
+  cursor: pointer;
+}
+
+.info:hover{
+  background: #292d69;
 }
 
 
@@ -81,6 +86,10 @@ cursor: pointer;
 color: hsl(235, 45%, 61%);
 }
 
+.active{
+  color: white;
+}
+
 #user .info ul li:hover{
   color: white;
 }
@@ -102,6 +111,10 @@ color: hsl(235, 45%, 61%);
 
 #user {
   grid-row: 1 / span 2;
+  background: #1d204b;
+}
+
+#user .info:hover{
   background: #1d204b;
 }
 
@@ -171,6 +184,7 @@ color: hsl(235, 45%, 61%);
   .main {
     height: 150vh;
   }
+
   .grid {
     height: 90%;
     width: 85vw;
@@ -179,24 +193,68 @@ color: hsl(235, 45%, 61%);
     grid-gap: 20px;
   }
 
+  .time{
+    display: flex;
+    height: 40px;
+    position: relative;
+    justify-content: space-between;
+    top: -10px;
+    align-items: center;
+  }
+
   .card {
     height: 90%;
     border-radius: 20px;
   }
 
-  .user {
-    height: 100%;
-  }
-
   .info {
     width: 101%;
     position: relative;
-    bottom: -47px;
-    height: 85%;
+    bottom: -32px;
+    height: 95%;
     left: -2px;
     border-radius: 20px;
   }
+
+  .time .total{
+    font-size: 37px;
+  }
+
+  #user .user-info{
+    position: relative;
+    background-position: left 50px top 10px;
+    background-size: 50px;
+    padding: 5px;
+  }
+
+  #user .user-info .text{
+    position: relative;
+    top: 0px;
+    width: auto;
+    left: 125px;
+  }
+
+  #user .info{
+    text-align: center;
+  }
+
+  #user .user-info .text sub{
+    font-size: 12px;
+  }
+
+  #user .user-info .text h1{
+    font-size: 18px;
+  }
+
+  #user .info ul li{
+    display: inline-block;
+  }
+
   #user {
     grid-row: 1/2;
+  }
+
+  .info:hover{
+    background: #1d204b;
   }
 }
