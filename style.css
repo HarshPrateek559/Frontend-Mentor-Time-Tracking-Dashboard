@@ -86,10 +86,6 @@ cursor: pointer;
 color: hsl(235, 45%, 61%);
 }
 
-.active{
-  color: white;
-}
-
 #user .info ul li:hover{
   color: white;
 }
@@ -180,7 +176,7 @@ color: hsl(235, 45%, 61%);
   color:hsl(235, 45%, 61%);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .main {
     height: 150vh;
   }
